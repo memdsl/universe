@@ -1,4 +1,4 @@
 site_name: Universe
-site_url: https://memdsl.org/universe
+site_url: https://memdsl.org
 theme:
-     name: material
+    name: material
