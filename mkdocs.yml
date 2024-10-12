@@ -58,8 +58,8 @@ copyright: >
     Copyright &copy; 2024 - 2030 MEMDSL –
     <a href="#__consent">Change cookie settings</a>
 
-repo_url: https://github.com/memdsl
-repo_name: memdsl
+repo_url: https://github.com/memdsl/universe
+repo_name: memdsl/universe
 edit_uri: edit/main/docs/
 
 plugins:
@@ -74,7 +74,8 @@ plugins:
         enable_creation_date: true
         fallback_to_build_date: false
     - git-committers:
-        repository: memdsl
+        enabled: true
+        repository: memdsl/universe
         branch: main
 
 nav:
