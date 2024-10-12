@@ -48,11 +48,11 @@ theme:
         - navigation.prune
         - navigation.indexes
         - toc.follow
-        - toc.integrate
         - navigation.top
         - announce.dismiss
         - navigation.footer
         - content.action.edit
+        - content.action.view
 
 copyright: >
     Copyright &copy; 2024 - 2030 MEMDSL –
@@ -74,10 +74,11 @@ plugins:
         enable_creation_date: true
         fallback_to_build_date: false
     - git-committers:
-        enabled: true
+        enabled: !ENV [CI, false]
         repository: memdsl/universe
         branch: main
-
+        exclude:
+            - index.md
 nav:
     - 首页: index.md
     - 博客:
@@ -111,6 +112,6 @@ extra:
     analytics:
         provider: google
         property: G-XXXXXXXXXX
-
+    scope: /
 
 
