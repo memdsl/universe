@@ -1,27 +1,40 @@
 site_name: MEMDSL
 site_url: https://memdsl.org
 
+repo_url: https://github.com/memdsl/universe
+repo_name: memdsl/universe
+edit_uri: edit/main/docs/
+
+copyright: >
+    Copyright &copy; 2024 - 2030 MEMDSL –
+    <a href="#__consent">Change cookie settings</a>
+
+nav:
+    - 首页: index.md
+    - 博客:
+        - blog/index.md
+
 theme:
     name: material
     palette:
     - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
+          icon: material/brightness-auto
+          name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: black
       accent: orange
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+          icon: material/brightness-7
+          name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       accent: orange
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+          icon: material/brightness-4
+          name: Switch to light mode
     font:
         text: Roboto
         code: Roboto Mono
@@ -54,14 +67,6 @@ theme:
         - content.action.edit
         - content.action.view
 
-copyright: >
-    Copyright &copy; 2024 - 2030 MEMDSL –
-    <a href="#__consent">Change cookie settings</a>
-
-repo_url: https://github.com/memdsl/universe
-repo_name: memdsl/universe
-edit_uri: edit/main/docs/
-
 plugins:
     - privacy
     - search
@@ -79,10 +84,6 @@ plugins:
         branch: main
         exclude:
             - index.md
-nav:
-    - 首页: index.md
-    - 博客:
-        - blog/index.md
 
 extra:
     alternate:
@@ -113,5 +114,3 @@ extra:
         provider: google
         property: G-XXXXXXXXXX
     scope: /
-
-
