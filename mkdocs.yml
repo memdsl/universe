@@ -9,11 +9,6 @@ copyright: >
     Copyright &copy; 2024 - 2030 MEMDSL –
     <a href="#__consent">Change cookie settings</a>
 
-nav:
-    - index.md
-    - project/index.md
-    - blog/index.md
-
 theme:
     name: material
     palette:
@@ -58,7 +53,7 @@ theme:
         - navigation.sections
         - navigation.expand
         - navigation.path
-        - navigation.prune
+        # - navigation.prune
         - navigation.indexes
         - toc.follow
         - navigation.top
@@ -84,6 +79,14 @@ plugins:
         branch: main
         exclude:
             - index.md
+    - awesome-pages:
+        filename: .pages
+        collapse_single_pages: false
+        strict: true
+        order: asc
+        sort_type: natural
+        order_by: filename
+        ignore_case: false
 
 extra:
     alternate:
