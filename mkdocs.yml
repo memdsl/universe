@@ -10,9 +10,9 @@ copyright: >
     <a href="#__consent">Change cookie settings</a>
 
 nav:
-    - 主页: index.md
-    - 博客:
-        - blog/index.md
+    - index.md
+    - project/index.md
+    - blog/index.md
 
 theme:
     name: material
