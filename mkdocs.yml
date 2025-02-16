@@ -66,8 +66,6 @@ plugins:
     - privacy
     - search
     - social
-    - blog
-    - tags
     - git-revision-date-localized:
         enabled: !ENV [CI, false]
         type: timeago
@@ -87,6 +85,8 @@ plugins:
         sort_type: natural
         order_by: filename
         ignore_case: false
+    - blog
+    - tags
 
 extra:
     alternate:
